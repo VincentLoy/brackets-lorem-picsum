@@ -1,13 +1,25 @@
 {
-    "name": "dnbard.lorem-pixel",
-    "title": "Lorem Pixel",
-    "description": "Generate placeholder Images for every case",
+    "name": "vloy.lorem-picsum",
+    "title": "Lorem Picsum",
+    "description": "Generate placeholder Images from lorempicsum.com",
     "homepage": "https://github.com/dnbard/brackets-lorem-pixel",
-    "version": "0.1.3",
-    "author": "Alex Bardanov",
+    "version": "0.1.1",
+    "author": "Vincent Loy",
     "license": "MIT",
     "engines": {
         "brackets": ">=0.32.0"
     },
-    "keywords": ["generate", "images"]
+    "keywords": [
+        "generate", 
+        "images",
+        "placeholder",
+        "lorem", 
+        "picsum",
+        "lorem picsum",
+        "nemo",
+        "up",
+        "futurama",
+        "simpsons",
+        "rio"
+    ]
 }

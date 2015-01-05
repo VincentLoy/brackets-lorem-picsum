@@ -1,13 +1,13 @@
-#lorempixel_icon{
+#lorempicsum_icon{
     content: "";
     cursor: pointer;
 }
 
-.ext_lorempixel .modal-body{
+.ext_lorempicsum .modal-body{
     position: relative;
 }
 
-.ext_lorempixel input.size{
+.ext_lorempicsum input.size{
     width: 100px;
     margin-left: 10px;
     margin-bottom: 5px;
@@ -17,7 +17,7 @@
     border: 1px solid rgb(178, 181, 181);
 }
 
-.ext_lorempixel input.url{
+.ext_lorempicsum input.url{
     width: 320px;
     margin-bottom: 2px;
     color: rgb(85, 85, 85);
@@ -26,11 +26,11 @@
     border: 1px solid rgb(178, 181, 181);
 }
 
-.ext_lorempixel input[type="checkbox"]{
+.ext_lorempicsum input[type="checkbox"]{
     margin-bottom: 5px;
 }
 
-.ext_lorempixel select.theme{
+.ext_lorempicsum select.theme{
     width: 333px;
 }
 
@@ -39,7 +39,7 @@
     display: inline-block;
 }
 
-.ext_lorempixel .preview-box{
+.ext_lorempicsum .preview-box{
     position: absolute;
     top: 15px;
     right: 10px;
@@ -48,7 +48,7 @@
     overflow: hidden;
 }
 
-.ext_lorempixel .preview-box > img{
+.ext_lorempicsum .preview-box > img{
     max-width: 165px;
     max-height: 130px;
     border-radius: 5px;
