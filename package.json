@@ -1,8 +1,8 @@
 {
-    "name": "vloy.lorem-picsum",
-    "title": "Lorem Picsum",
-    "description": "Generate placeholder Images from lorempicsum.com",
-    "homepage": "https://github.com/dnbard/brackets-lorem-pixel",
+    "name": "brackets-lorem-picsum",
+    "title": "Lorem Picsum for Brackets",
+    "description": "Generate placeholder Images from lorempicsum.com, place quickly pictures from Futurama, The Simpsons, Rio, Finding Nemo and Up!.",
+    "homepage": "https://github.com/VincentLoy/brackets-lorem-picsum",
     "version": "0.1.1",
     "author": "Vincent Loy",
     "license": "MIT",

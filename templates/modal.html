@@ -43,16 +43,16 @@
             <span class="grid-left">Url</span>
             <input class="url" data-bind="value: url, click: select" readonly="readonly"/>
         </div>
-        <div style="display: none;">
-            <button class="dialog-button btn" data-bind="click: onUrlCopy">Copy url to clipboard</button>
-            <button class="dialog-button btn" data-bind="click: onFileSave">Save current image to disk</button>
-        </div>
+        
         <div class="preview-box"></div>
     </div>
     <div class="modal-footer">
         <button class="dialog-button btn primary" data-button-id="ok">Close</button>
-        <button class="dialog-button btn" data-bind="click: onUrlCopy">Copy url to clipboard</button>
+        <button class="dialog-button btn hide" data-bind="click: onUrlCopy">Copy url to clipboard</button>
         <button class="dialog-button btn" data-bind="click: onUrlInsert">Insert at caret position</button>
         <button class="dialog-button btn" data-bind="click: onPreview">Preview</button>
     </div>
+    <p class="text-center">
+        All placholders are from <a href="http://lorempicsum.com">lorempicsum.com</a>
+    </p>
 </div>

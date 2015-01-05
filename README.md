@@ -1,6 +1,9 @@
-Brackets Lorem Pixel
+Brackets Lorem Picsum
 ====================
 
-![ ](http://content.screencast.com/users/dnbard/folders/Jing/media/20b95fa4-3cf2-4d6a-ad8c-9f82b531a7ce/2014-08-06_1557.png)
+This plugin is an adaptation from the original Brackets Plugin : [Lorem Pixel](https://github.com/dnbard/brackets-lorem-pixel) from [dnbard](https://github.com/dnbard) to work with pictures from [lorempicsum.com](http://lorempicsum.com/)
 
-Placeholder images for every case. It's simple and absolutely free! Just put the custom url in your code to get your dummy image.
+
+![ ](https://farm8.staticflickr.com/7561/16022084809_573cbdf256_o.jpg)
+
+Placeholder images from lorempicsum.com. place quickly pictures from Futurama, The Simpsons, Rio, Finding Nemo and Up!.
