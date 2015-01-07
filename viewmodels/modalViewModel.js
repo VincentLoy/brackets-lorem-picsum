@@ -71,7 +71,12 @@ define(function(require, exports, module){
             var previewBox = $('.preview-box');
 
             previewBox.empty();
-            previewBox.append('<img src="'+ this.url() +'" />');
+            previewBox.append('<img class="placeholder-preview" src="'+ this.url() +'" />');
+            
+            $('.placeholder-preview').error(function(){
+               previewBox.empty();
+                previewBox.append('<p class="placeholder-error">This placeholder is not available for this size :(</p>');
+            });
 
             event.stopPropagation();
         }, this);

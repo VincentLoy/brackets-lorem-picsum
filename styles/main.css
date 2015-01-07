@@ -52,7 +52,12 @@
 .ext_lorempicsum .preview-box > img{
     max-width: 165px;
     max-height: 130px;
-    border-radius: 5px;
+    border-radius: 2px;
+}
+
+.ext_lorempicsum .preview-box > p{
+    text-align: center;
+    color: #e74c3c;
 }
 
 .ext_lorempicsum .dialog-button{
