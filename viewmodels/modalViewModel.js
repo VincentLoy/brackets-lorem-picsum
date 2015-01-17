@@ -11,7 +11,8 @@ define(function(require, exports, module){
         this.height = ko.observable(200);
         this.theme = ko.observable('nemo');
         this.image = ko.observable('1');
-
+        
+        //set URL
         this.url = ko.computed(function(){
             var url = 'http://lorempicsum.com/' +
                 (this.theme() != 0? this.theme() : '')+ '/'+
@@ -20,7 +21,8 @@ define(function(require, exports, module){
                 this.image();
             return url;
         }, this);
-
+        
+        //When preview button is clicked
         this.onPreview = _.bind(function(model, event){
             var previewBox = $('.preview-box');
 
@@ -53,6 +55,7 @@ define(function(require, exports, module){
             editor.focus();
             editor.setSelection(pos, posEnd);
         }, this);
+    }
 
     module.exports = ModalViewModel;
 });
