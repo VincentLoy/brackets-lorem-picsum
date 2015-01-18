@@ -13,3 +13,4 @@ Placeholder images from lorempicsum.com. place quickly pictures from Futurama, T
 #### V1.0.0
 * Auto preview update on form changes
 * remove some useless function for this version
+* Fix : extension icon now visible in mac OS
