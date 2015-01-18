@@ -7,3 +7,9 @@ This plugin is an adaptation from the original Brackets Plugin : [Lorem Pixel](h
 ![ ](https://farm8.staticflickr.com/7561/16022084809_573cbdf256_o.jpg)
 
 Placeholder images from lorempicsum.com. place quickly pictures from Futurama, The Simpsons, Rio, Finding Nemo and Up!.
+
+### Changelog
+
+#### V1.0.0
+* Auto preview update on form changes
+* remove some useless function for this version
