@@ -1,6 +1,7 @@
 #lorempicsum_icon{
     content: "";
     cursor: pointer;
+    background: url("../images/icon.png");
 }
 
 .ext_lorempicsum .modal-body{

@@ -6,17 +6,17 @@
     <div class="modal-body">
         <div>
             <span class="grid-left">Width</span>
-            <input type="range" min="1" max="1920" data-bind="value: width">
-            <input class="size" data-bind="value: width" />
+            <input type="range" min="1" max="1920" data-bind="value: width, click: onPreview">
+            <input class="size" data-bind="value: width, click: onPreview" />
         </div>
         <div>
             <span class="grid-left">Height</span>
-            <input type="range" name="points" min="1" max="1080" data-bind="value: height">
-            <input class="size"  data-bind="value: height" />
+            <input type="range" name="points" min="1" max="1080" data-bind="value: height, click: onPreview">
+            <input class="size"  data-bind="value: height, click: onPreview" />
         </div>
         <div>
             <span class="grid-left">Theme</span>
-            <select class="theme" data-bind="value: theme">
+            <select class="theme" data-bind="value: theme, click: onPreview">
                 <option value="nemo">Finding Nemo</option>
                 <option value="futurama">Futurama</option>
                 <option value="rio">rio</option>
@@ -27,7 +27,7 @@
         
         <div>
             <span class="grid-left">Image Number</span>
-            <select class="theme" data-bind="value: image">
+            <select class="theme" data-bind="value: image, click: onPreview">
                 <option value="1">Image 1</option>
                 <option value="2">Image 2</option>
                 <option value="3">Image 3</option>
@@ -45,11 +45,13 @@
             <input class="url" data-bind="value: url, click: select" readonly="readonly"/>
         </div>
         
-        <div class="preview-box"></div>
+        <div class="preview-box">
+            <img class="placeholder-preview" src=""/>
+        </div>
     </div>
     <div class="modal-footer">
         <button class="dialog-button btn" data-bind="click: onUrlInsert">Insert at caret position</button>
-        <button class="dialog-button btn" data-bind="click: onPreview">Preview</button>
+        <button class="dialog-button btn" data-bind="click: onPreview">Update Preview</button>
     </div>
     <p class="text-center">
         All placholders are from <a href="http://lorempicsum.com">lorempicsum.com</a>

@@ -1,10 +1,12 @@
 define(function(require, exports, module){
     var ko = require('../vendor/knockout'),
         _ = require('../vendor/lodash'),
+        ExtensionUtils = brackets.getModule("utils/ExtensionUtils"),
         NodeConnection = brackets.getModule("utils/NodeConnection"), //required
         DocumentManager = brackets.getModule("document/DocumentManager"), //required
         EditorManager = brackets.getModule("editor/EditorManager"), //required
         nodeConnection = new NodeConnection(); //required
+    
 
     function ModalViewModel(){
         this.width = ko.observable(400);
@@ -12,6 +14,7 @@ define(function(require, exports, module){
         this.theme = ko.observable('nemo');
         this.image = ko.observable('1');
         
+        var previewBox = $('.preview-box'); 
         //set URL
         this.url = ko.computed(function(){
             var url = 'http://lorempicsum.com/' +
@@ -22,9 +25,12 @@ define(function(require, exports, module){
             return url;
         }, this);
         
+        
+        previewBox.children("img").attr("src", this.url());
+
         //When preview button is clicked
         this.onPreview = _.bind(function(model, event){
-            var previewBox = $('.preview-box');
+            
 
             previewBox.empty();
             previewBox.append('<img class="placeholder-preview" src="'+ this.url() +'" />');
@@ -56,6 +62,6 @@ define(function(require, exports, module){
             editor.setSelection(pos, posEnd);
         }, this);
     }
-
+    
     module.exports = ModalViewModel;
 });
